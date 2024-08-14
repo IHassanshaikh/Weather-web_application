@@ -3,4 +3,9 @@
 
 
  
-<img src="Capture.PNG" alt="Screenshot of Spotify homepage clone" width="600">
+<img src="https://github.com/IHassanshaikh/Weather-web_application/blob/main/screencapture-localhost-3000-2024-08-07-18_35_36.png" alt="Screenshot of Spotify homepage clone" width="600">
+
+<img src="https://github.com/IHassanshaikh/Weather-web_application/blob/main/screencapture-localhost-3000-about-2024-08-07-18_37_20.png" alt="Screenshot of Spotify homepage clone" width="600">
+
+<img src="https://github.com/IHassanshaikh/Weather-web_application/blob/main/screencapture-localhost-3000-weather-2024-08-07-18_37_04.png" alt="Screenshot of Spotify homepage clone" width="600">
+
