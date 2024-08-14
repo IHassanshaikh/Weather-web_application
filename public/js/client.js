@@ -18,7 +18,7 @@ const info = async (event) => {
         city.innerHTML = "Enter city name";
     } else {
         // try {
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=0c7ba391097bfc9ba0deb4ada8934da3`
+        let url = `ENTER YOUR WEATHER API`
         let response = await fetch(url)
         api_info = await response.json();
         cityname = api_info.name;
