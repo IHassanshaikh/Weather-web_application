@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headercontent}}
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="container-fluid weather-main">
+        {{!-- searchinput --}}
+        <div class="searchbar mt-5">
+            <input class="input rounded-pill shadow bg-dark" type="text" placeholder="Enter your City">
+            <button class="searchbutton bg-info rounded-pill" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search "
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85a1.007 1.007 0 0 0-.115-.098zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </button>
+
+        </div>
+        {{!-- weathercard --}}
+        <div class="container-lg mt-5 border d-flex justify-content-center flex-column shadow">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="time h3 fw-bold"></div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <div class="city-name h3">Enter Your City Name First</div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <div class="temprature h1 fw-bold"></div>
+                    <div><i id="icon"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <footer class="footer">
+        Created by Hassan Shaikh
+    </footer>
+    <script src="js/client.js"></script>
+</body>
+<style>
+    .weather-main {
+        min-height: 100vh;
+        color: white;
+    }
+
+    .container-lg {
+        {{!-- background-image: url(/img/sunny.jpg); --}}
+        border-radius: 105px 105px 0px 0px;
+        width: 500px;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0;
+        border-radius: 15px;
+        color: black;
+        line-height: 1.1;
+    }
+    
+    #icon{
+        font-size: 6rem;
+    }
+    .searchbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
+    }
+
+    .searchbar input {
+        width: 500px;
+        padding: 5px;
+        border: none;
+        color: white;
+    }
+
+    .searchbutton {
+        position: relative;
+        right: 28px;
+        border: none;
+        width: 50px;
+    }
+
+    ::placeholder {
+        color: rgb(255, 255, 255);
+        padding: 20px
+    }
+
+    .searchbar button:hover {
+        color: #f7f9fb;
+    }
+
+    @media screen and (max-width: 768px) {
+        .container-lg {
+            width: 400px;
+            height: 350px;
+        } #icon{
+        font-size: 15vw;
+    }
+    }
+
+    @media screen and (max-width: 600px) {
+        .container-lg {
+            width: 350px;
+            height: 300px;
+        } #icon{
+        font-size: 15vw;
+    }
+    }
+
+    @media screen and (max-width: 400px) {
+        .container-lg {
+            width: 270px;
+            height: 250px;
+          
+        } #icon{
+        font-size: 15vw;
+    }
+    }
+    
+</style>
+<style>
+    {{>css}}
+</style>
+</html>

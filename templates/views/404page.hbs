@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headercontent}}
+</head>
+<body>
+    <div class="body">
+        {{>navbar}}
+        <div class="main mt-5 p-3">
+            <div class="row d-flex justify-content-center align-items-center text-center">
+                <!-- leftmain -->
+                <div class="col-md-6 col-12 main-left">
+                    <p class="h5">Welcome to Weather app</p>
+                    <span class="h3">{{errormsg}}</span>
+                    <img src="/img/404error1.png" class="img-fluid" alt="...">
+                    <div>
+                        <a href="/"><button class="btn bg-info rounded-pill m-3 button fw-bold p-2 shadow">GO
+                                BACK</button></a>
+                    </div>
+                </div>
+                 </div>
+                 </div>
+                <footer class="footer mt-4 mb-0">
+                    Created by Hassan Shaikh
+                </footer>
+    </div>
+    <style>
+   {{>css}}
+    </style>
+</body>
+
+</html>

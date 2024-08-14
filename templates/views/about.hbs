@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ {{>headercontent}}
+</head>
+<body>
+    <div class="body overflow-hidden ">
+           {{>navbar}}
+        <div class="main mt-5 p-1">
+            <div class="row d-flex justify-content-center align-items-center text-center">
+                <!-- Aboutleft -->
+                <div class="col-md-6 col-12 about-left">
+                    <div class="h2">Welcome to the Weather App</div>
+                    <p>Hi there! I'm Hassan Shaikh, the creator of this weather app. I have a passion for technology,
+                        data, and providing useful information to people in a simple and accessible way. This weather
+                        app is designed to offer you real-time weather updates for any city around the globe.</p>
+
+                    <div class="h2">Our Mission</div>
+                    <p>The mission of this app is to provide accurate and up-to-date weather information to help you
+                        plan your day, whether you're going for a run, heading to work, or planning a trip. We believe
+                        that having access to reliable weather data can make a significant difference in our daily
+                        lives.</p>
+
+                    <div class="h2">Technology Behind the App</div>
+                    <p>This weather app is powered by the OpenWeatherMap API, which provides current weather data,
+                        forecasts, and historical data for any location in the world.</p>
+
+
+                    <div class="h2">How It Works</div>
+                    <p>When you enter a city name in the search bar, the app sends a request to the OpenWeatherMap API,
+                        which returns the current weather data for that city. The app then processes and displays this
+                        data in an easy-to-read format, including temperature, weather conditions, and forecasts.</p>
+                </div>
+                <!-- aboutright -->
+                <div class="col-md-6 col-12 about-right">
+                    <p class="h5">Welcome to Weather app</p>
+                    <span class="h3">Get the Latest <span class="text-info">Weather</span> info of your city</span>
+                    <div>
+                        <a href="/weather"><button
+                                class="btn me-md-2 bg-info rounded-pill mt-3 button fw-bold p-2 shadow">CHECK
+                                NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer class="footer">
+        Created by Hassan Shaikh
+    </footer>
+    </div>
+    <style>
+          {{>css}}
+    </style>
+</body>
+
+</html>
